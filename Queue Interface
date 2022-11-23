@@ -1,0 +1,12 @@
+/**
+   MyQueue interface
+*/
+public interface MyQueue{
+   //sentinel methods
+   public boolean isEmpty();
+   public boolean isFull();
+   //allowable operations
+   public boolean enqueue(Object item);
+   public Object peek();
+   public Object dequeue();
+}//end of interface
