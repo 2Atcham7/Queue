@@ -1,0 +1,19 @@
+/***
+   MyNode class - this class will facilitate the data container of the linked-based implementation
+   of the MyStack interface or any linear data structure
+**/
+public class MyNode{
+   //define object variables
+   private Object item;
+   private MyNode next;
+   
+   //constructors
+   public MyNode(Object item)            { this.item=item; }
+   public MyNode()                       {}
+   //setters
+   public void setItem(Object item)    { this.item=item; }
+   public void setNext(MyNode next)      { this.next = next; }
+   //getters
+   public Object getItem()             { return item; }
+   public MyNode getNext()               { return next; }
+}//end of class
