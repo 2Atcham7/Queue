@@ -1,0 +1,68 @@
+/**
+   MyQueueTest
+*/
+
+public class MyQueueTest{
+   public static void main(String ...args){
+      testCircularQueue();
+   }
+   
+   public static void testQueue(){
+      //MyQueueLinked and MyQueueArray have the same interface 
+      //therefore we can use their methods interchangeably.
+      MyQueue q = new MyQueueLinked(); 
+      q.enqueue("A");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("B");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("C");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("D");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      System.out.println("Dequeue: " + q.dequeue());
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+   }
+   
+   public static void testCircularQueue(){
+      MyQueue q = new MyCircularQueue(6);
+      q.enqueue("A");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("B");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("C");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("D");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("E");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("F");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("G");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      System.out.println("Dequeue: " + q.dequeue());
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      System.out.println("Dequeue: " + q.dequeue());
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      System.out.println("Dequeue: " + q.dequeue());
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+      q.enqueue("G");
+      System.out.println(q.toString());
+      System.out.println("Count: " + q.size());
+ 
+   }
+}
